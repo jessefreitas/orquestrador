@@ -106,10 +106,40 @@ def exemplo_pipeline_dados():
         description="Extrai dados da fonte principal"
     )
     
+    # Variáveis para armazenar resultados temporariamente
+    dados_extraidos = None
+    dados_validados = None
+    dados_transformados = None
+    
+    def validar_wrapper():
+        nonlocal dados_validados
+        dados_validados = validar_dados(dados_extraidos)
+        return dados_validados
+    
+    def transformar_wrapper():
+        nonlocal dados_transformados
+        dados_transformados = transformar_dados(dados_validados)
+        return dados_transformados
+    
+    def relatorio_wrapper():
+        return gerar_relatorio(dados_transformados)
+    
+    def backup_wrapper():
+        return backup_dados(dados_transformados)
+    
+    # Modificar a função de extração para salvar resultado
+    def extrair_dados_wrapper():
+        nonlocal dados_extraidos
+        dados_extraidos = extrair_dados()
+        return dados_extraidos
+    
+    # Atualizar tarefa de extração
+    orq.tasks["extrair"].function = extrair_dados_wrapper
+    
     # Validação - depende da extração
     orq.add_task(
         "validar",
-        validar_dados,
+        validar_wrapper,
         dependencies=["extrair"],
         description="Valida os dados extraídos"
     )
@@ -117,7 +147,7 @@ def exemplo_pipeline_dados():
     # Transformação - depende da validação
     orq.add_task(
         "transformar",
-        transformar_dados,
+        transformar_wrapper,
         dependencies=["validar"],
         description="Transforma e processa os dados"
     )
@@ -125,7 +155,7 @@ def exemplo_pipeline_dados():
     # Relatório - depende da transformação
     orq.add_task(
         "relatorio",
-        gerar_relatorio,
+        relatorio_wrapper,
         dependencies=["transformar"],
         description="Gera relatório final"
     )
@@ -140,7 +170,7 @@ def exemplo_pipeline_dados():
     
     orq.add_task(
         "backup",
-        backup_dados,
+        backup_wrapper,
         dependencies=["transformar"],
         description="Faz backup dos dados processados"
     )
