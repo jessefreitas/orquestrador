@@ -1,0 +1,46 @@
+# Configuração do Orquestrador
+# Este é um arquivo de exemplo com as configurações disponíveis
+
+# Configurações gerais
+max_workers: 4          # Número máximo de workers para execução paralela
+log_level: "INFO"       # Nível de log: DEBUG, INFO, WARNING, ERROR, CRITICAL
+
+# Configurações de timeout (em segundos)
+timeouts:
+  default: 300          # Timeout padrão para tarefas (5 minutos)
+  long_running: 1800    # Para tarefas de longa duração (30 minutos)
+
+# Configurações de retry
+retry:
+  default_count: 3      # Número padrão de tentativas
+  delay: 1              # Delay entre tentativas (segundos)
+
+# Configurações de notificação
+notifications:
+  enabled: true
+  email:
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    username: "seu_email@gmail.com"
+    password: "sua_senha"
+  slack:
+    webhook_url: "https://hooks.slack.com/services/..."
+
+# Configurações de armazenamento
+storage:
+  logs_path: "logs/"
+  results_path: "results/"
+  backup_enabled: true
+
+# Configurações específicas do ambiente
+environment:
+  name: "desenvolvimento"  # desenvolvimento, teste, producao
+  debug: true
+  monitoring_enabled: false
+
+# Configurações customizadas
+custom:
+  # Adicione suas configurações específicas aqui
+  data_source: "database"
+  api_base_url: "https://api.exemplo.com"
+  batch_size: 100 

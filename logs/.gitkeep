@@ -1,0 +1,2 @@
+# Este arquivo mantém o diretório logs no controle de versão
+# Os arquivos de log são ignorados pelo .gitignore, mas o diretório precisa existir 
