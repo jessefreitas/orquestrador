@@ -1,0 +1,106 @@
+{
+  "name": "exemplo_checkpoint",
+  "description": "Checkpoint antes do exemplo de releases",
+  "timestamp": "2025-06-29T13:05:36.647164",
+  "type": "checkpoint",
+  "project_state": {
+    "timestamp": "2025-06-29T13:05:36.647164",
+    "files": {
+      "src\\backup.py": {
+        "size": 13585,
+        "modified": "2025-06-29T12:59:58.535115",
+        "hash": "84100822857057d54c515d3fd45bb294"
+      },
+      "src\\logging_system.py": {
+        "size": 16528,
+        "modified": "2025-06-29T13:00:58.530251",
+        "hash": "0242d0b26afa3429354d4d267792c281"
+      },
+      "src\\orquestrador.py": {
+        "size": 11672,
+        "modified": "2025-06-29T12:50:50.868490",
+        "hash": "b9399b8835a3174e98e23d998c3cd957"
+      },
+      "src\\release_cli.py": {
+        "size": 12530,
+        "modified": "2025-06-29T13:02:08.554458",
+        "hash": "a00cba9174a3907bbf04bf6cdf6532f6"
+      },
+      "src\\task.py": {
+        "size": 3411,
+        "modified": "2025-06-29T12:49:24.661154",
+        "hash": "85cfed6c9d101fa5883d7afcabe587e5"
+      },
+      "src\\utils.py": {
+        "size": 5777,
+        "modified": "2025-06-29T12:49:49.895965",
+        "hash": "7b6ea662409024df9f55526cd07ba822"
+      },
+      "src\\version.py": {
+        "size": 8507,
+        "modified": "2025-06-29T12:59:04.281415",
+        "hash": "0929d2247534dcf9b7e4080f693821ab"
+      },
+      "src\\__init__.py": {
+        "size": 595,
+        "modified": "2025-06-29T13:02:12.718879",
+        "hash": "7167c82ccc3d3f0d2781491d826dc2da"
+      },
+      "config\\config.yaml": {
+        "size": 1383,
+        "modified": "2025-06-29T12:51:14.381544",
+        "hash": "8ccf98d5e57198c0752b68f8c52b56c1"
+      },
+      "examples\\exemplo_basico.py": {
+        "size": 9236,
+        "modified": "2025-06-29T12:56:22.786118",
+        "hash": "0ece0adfb7c7b46b5febb885133e779f"
+      },
+      "examples\\exemplo_release_system.py": {
+        "size": 9705,
+        "modified": "2025-06-29T13:02:49.124171",
+        "hash": "50c5fd5146c155d17b79ef529c9e078b"
+      },
+      "tests\\test_orquestrador.py": {
+        "size": 13062,
+        "modified": "2025-06-29T12:53:01.416634",
+        "hash": "28662d07c04dbc8bcbedff8ed9fdd45e"
+      },
+      "main.py": {
+        "size": 4366,
+        "modified": "2025-06-29T12:51:07.632675",
+        "hash": "9fe668bd075be63bf9518412b74b4475"
+      },
+      "setup.py": {
+        "size": 2529,
+        "modified": "2025-06-29T13:03:11.919004",
+        "hash": "2bfa6df8b46a5d9efe0aa9b320fbeefe"
+      },
+      "requirements.txt": {
+        "size": 93,
+        "modified": "2025-06-29T13:02:53.502977",
+        "hash": "b1c1e5f16e01a3cb3e36a5b41cb80097"
+      },
+      "CHANGELOG.md": {
+        "size": 388,
+        "modified": "2025-06-29T13:05:36.644171",
+        "hash": "3b0111f96ddc19ae05b8c5440642dbb6"
+      },
+      "README.md": {
+        "size": 2328,
+        "modified": "2025-06-29T12:48:32.119370",
+        "hash": "af0ea5920b06c8a5388809d6dcca9a40"
+      }
+    },
+    "directories": [
+      "config",
+      "examples",
+      "logs",
+      "scripts",
+      "src",
+      "tests"
+    ],
+    "total_size": 115695
+  },
+  "restore_point": true
+}

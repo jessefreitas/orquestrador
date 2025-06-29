@@ -1,0 +1,49 @@
+{
+  "version": "1.0.1+202506291305",
+  "release_date": "2025-06-29T13:05:36.635165",
+  "pre_release": false,
+  "release_notes": "\n        ✨ Novas funcionalidades:\n        - Sistema de releases automático\n        - Gerenciamento de backups\n        - Logs internos estruturados\n        - CLI para gerenciamento\n        \n        🔧 Melhorias:\n        - Performance otimizada\n        - Documentação atualizada\n        - Testes expandidos\n        ",
+  "build_info": {
+    "build_date": "2025-06-29T13:05:36.635165",
+    "build_number": "202506291305",
+    "python_version": "3.12.5 (tags/v3.12.5:ff3bc82, Aug  6 2024, 20:45:27) [MSC v.1940 64 bit (AMD64)]",
+    "platform": "nt"
+  },
+  "files": {
+    "src/": {
+      "type": "directory",
+      "files": 16,
+      "modified": "2025-06-29T13:02:05.952711"
+    },
+    "config/": {
+      "type": "directory",
+      "files": 1,
+      "modified": "2025-06-29T12:51:12.575011"
+    },
+    "examples/": {
+      "type": "directory",
+      "files": 2,
+      "modified": "2025-06-29T13:02:46.639266"
+    },
+    "tests/": {
+      "type": "directory",
+      "files": 3,
+      "modified": "2025-06-29T12:55:23.021060"
+    },
+    "main.py": {
+      "type": "file",
+      "size": 4366,
+      "modified": "2025-06-29T12:51:07.632675"
+    },
+    "requirements.txt": {
+      "type": "file",
+      "size": 93,
+      "modified": "2025-06-29T13:02:53.502977"
+    },
+    "README.md": {
+      "type": "file",
+      "size": 2328,
+      "modified": "2025-06-29T12:48:32.119370"
+    }
+  }
+}
